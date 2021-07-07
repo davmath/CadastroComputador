@@ -1,0 +1,19 @@
+###
+POST http://localhost:3000/computador/cadastrar
+Content-Type: application/json
+
+{
+    "dono": "David",
+    "placamae": "A12345",
+    "processador": "Intel I3",
+    "memoria": 8,
+    "armazenamento": "500GB",
+    "fonte": "Corsair 500W"
+
+}
+
+###
+GET http://localhost:3000/computador/listar
+
+###
+DELETE http://localhost:3000/medico/computador/
