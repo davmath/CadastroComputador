@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Excluir Computador</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Dono"
+                [value]="computador.dono" name="name" disabled>
+        </mat-form-field>
+        
+           
+    </form>
+    <button mat-raised-button (click)="deleteComputador()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

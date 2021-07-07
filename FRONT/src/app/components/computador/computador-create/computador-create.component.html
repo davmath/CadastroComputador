@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-title>Novo computador</mat-card-title>
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Dono" [(ngModel)]="computador.dono" name="dono">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Placa-mãe" [(ngModel)]="computador.placamae" name="placamae">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Processador" [(ngModel)]="computador.processador" name="processador">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Memória" [(ngModel)]="computador.memoria" name="memoria">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Armazenamento" [(ngModel)]="computador.armazenamento" name="armazenamento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Fonte" [(ngModel)]="computador.fonte" name="fonte">
+        </mat-form-field>
+    </form>
+
+
+<button mat-raised-button (click)="createComputador()" color="primary">
+    Cadastrar
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
